@@ -1,9 +1,76 @@
-import React from 'react'
+import Tilt from 'react-tilt'
+import { motion } from 'framer-motion'
 
-const Works = () => {
+import { styles } from '../styles'
+import { github } from '../assets'
+import { projects } from '../constants'
+import { SectionWrapper } from '../hoc'
+import { fadeIn, textVariant } from '../utils/motion'
+
+const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+
   return (
-    <div>Works</div>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      <Tilt
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450
+        }}
+        className="bg-tertiary p-5 rounded-2xl sm:2-[360px] w-full"
+      >
+        <div className="relative w-full h-[230px]">
+          <img
+            src={image}
+            alt={name}
+            className="w-full h-full object-cover rounded-2xl"
+          />
+
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+            <div 
+              onClick={() => window.open(source_code_link, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursos-pointer"
+            >
+
+            </div>
+          </div>
+        </div>
+      </Tilt>
+    </motion.div>
   )
 }
 
-export default Works
+const Works = () => {
+  return (
+    <>
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText} text-center`}>
+          My work
+        </p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          Projects
+        </h2>
+      </motion.div>
+
+      <div className="w-full flex">
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ipsam tempora est sint ipsum tenetur temporibus illo alias, eius, cupiditate, deleniti ducimus sapiente ea enim odit a culpa dignissimos harum.
+        </motion.p>
+      </div>
+
+      <div className="mt-20 flex flex-wrap gap-7">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={`project-${index}`}
+            index={index}
+            {...project}
+          />
+        ))}
+      </div>
+    </>
+  )
+}
+
+export default SectionWrapper(Works, "")
