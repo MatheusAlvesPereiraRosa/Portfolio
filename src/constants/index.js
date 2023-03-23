@@ -21,13 +21,15 @@ import {
     mysql,
     //figma,
     //docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    //meta,
+    //starbucks,
+    //tesla,
+    //shopify,
+    eveclass,
+    ifnmg,
+    //carrent,
+    //jobit,
+    //tripguide,
     threejs,
     aracao,
     starbucksimg,
@@ -127,7 +129,7 @@ import {
   ];
   
   const experiences = [
-    {
+    /*{
       title: "React.js Developer",
       company_name: "Starbucks",
       icon: starbucks,
@@ -177,6 +179,33 @@ import {
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },*/
+    {
+      title: "Desenvolvedor Front-End (estagiário)",
+      company_name: "Eveclass",
+      icon: eveclass,
+      iconBg: "#E6DEDD",
+      date: "Mar 2022 - Agosto 2022",
+      points: [
+        "Atuei no desenvolvimento de componentes dinâmicos novos para o site da empresa, que era focado em vender plataformas (customizáveis) de ensino online para clientes interessados em começar a vender contéudo online de forma personalizada",
+        "No desenvolvimento utilizei conhecimentos de Vue.js, Nuxt.js, javascript e typescript e stylus com preprocessador de CSS para a estilização dos componentes.",
+        "Faziamos versionamento de código no github por meio de pull-requests que eram revisados pelos membros da equipe.",
+        "Para reuniões e escritório virtual utilizavamos o gather e para a comunicação usavamos o slack e para divisão de tarefas utilizamos metodologias agéis como e scrum e kanban por meio do notion.",
+      ],
+    },
+    {
+      title: "Desenvolvedor Full-Stack / Designer / DB (bolsista do projeto)",
+      company_name: "IFNMG - Campus Araçuaí",
+      icon: ifnmg,
+      iconBg: "#E6DEDD",
+      date: "Abril 2021 - Janeiro 2022",
+      points: [
+        "Atuei na criação da plataforma AraCão desde seu planejamento, desing de interface, levantamento de requisitos",
+        "No desenvolvimento utilizei conhecimentos de PHP, Boostrap, Javascript e Jquery para desenvolver a interfaces e as funcionalidades do site.",
+        "Sobre o back-end do site ele foi feito 100% em PHP puro, com conexão com o banco de dados que foi feito em MySQL",
+        "O versionamento do código foi feito no github por meio de pull-requests que eram revisados pelos membros da equipe (outros bolsistas do projeto).",
+        "Fui o principal gerenciador do projeto junto de meu coordenador da área e outros coordenadores do projeto em que o site pretendia colaborar DIGITOOL-Corona",
       ],
     },
   ];
