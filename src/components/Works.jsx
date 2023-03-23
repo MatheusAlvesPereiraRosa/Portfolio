@@ -3,6 +3,8 @@ import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
 import { github } from '../assets'
+import { google } from '../assets'
+import { netlify } from '../assets'
 import { projects } from '../constants'
 import { SectionWrapper } from '../hoc'
 import { fadeIn, textVariant } from '../utils/motion'
@@ -17,7 +19,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           scale: 1,
           speed: 450
         }}
-        className="bg-tertiary p-5 rounded-2xl w-full sm:w-[360px]"
+        className="bg-tertiary p-5 rounded-2xl w-full xl:w-[560px] md:w-[420px] sm:w-full"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -26,7 +28,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             className="w-full h-full object-cover rounded-2xl"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex flex-col-reverse items-end justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursos-pointer"
@@ -36,6 +38,19 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
                 alt="github"
                 className='w-1/2 h-1/2 object-contain'
               />
+
+            </div>
+
+            <div
+              onClick={() => window.open(source_code_link, "_blank")}
+              className="black-gradient w-10 h-10 mb-2 rounded-full flex justify-center items-center cursos-pointer"
+            >
+              <img
+                src={google}
+                alt="github"
+                className='w-1/2 h-1/2 object-contain'
+              />
+
             </div>
           </div>
         </div>
@@ -62,10 +77,10 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          My work
+          Meu trabalho
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Projects
+          Projetos
         </h2>
       </motion.div>
 
@@ -73,7 +88,7 @@ const Works = () => {
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] text-center">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ipsam tempora est sint ipsum tenetur temporibus illo alias, eius, cupiditate, deleniti ducimus sapiente ea enim odit a culpa dignissimos harum.
+          Estes são alguns dos projetos que desenvolvo estudando algumas tecnologias de desenvolvimento web. Também são alguns resultados de práticas que faço no meu horário de lazer
         </motion.p>
       </div>
 

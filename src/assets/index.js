@@ -6,6 +6,8 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import google from "./google.png";
+import netlify from "./netlify.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -29,6 +31,14 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import aracao from "./Aracao.png";
+import starbucksimg from './Starbucks.png';
+import testeNuxt from './Teste-nuxt.png';
+import testeReact from './Teste-react.png';
+import tour from './Tour-review.png';
+import review from './Review.png';
+
+import image from "./image.png"
 
 export {
   logo,
@@ -39,6 +49,8 @@ export {
   github,
   menu,
   close,
+  google,
+  netlify,
   css,
   docker,
   figma,
@@ -59,4 +71,11 @@ export {
   carrent,
   jobit,
   tripguide,
+  aracao,
+  starbucksimg,
+  testeNuxt,
+  testeReact,
+  tour,
+  review,
+  image,
 };

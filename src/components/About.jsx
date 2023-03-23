@@ -2,7 +2,7 @@ import React from 'react'
 import Tilt from 'react-tilt'
 import { motion } from 'framer-motion'
 
-
+import { image } from '../assets'
 import { styles } from '../styles'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
@@ -39,30 +39,37 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-    <motion.div className='flex flex-row'>
-      <motion.div>
-        <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>Introduction</p>
-          <h2 className={styles.sectionHeadText}>Overview.</h2>
+      <motion.div className='flex xl:flex-row md:flex-row sm:flex-col sm:items-center'>
+        <motion.div>
+          <motion.div variants={textVariant()}>
+            <p className={styles.sectionSubText}>Introdução</p>
+            <h2 className={styles.sectionHeadText}>Overview.</h2>
+          </motion.div>
+
+          <motion.p
+            variants={fadeIn("", "", 0.1, 1)}
+            className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          >
+            Sou um desenvolvedor de software esforçado e com experiência em desenvolvimento
+            com javascript (tanto no front como no back) na Web e tenho bastante experiência
+            utilizando framworks como React, Vue, Node.js e recentemente React Native. Gosto
+            de aprender, tenho bastante empenho no meu trabalho e já tenho experiência atuando
+            na área. Vamos trabalhar juntos e trazer as ideias para o mundo real!
+          </motion.p>
         </motion.div>
 
-        <motion.p
+        <motion.div
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='w-[350px] rounded-[50%] h-auto object-contain ml-12 sm:mt-12'
         >
-          I'm a skilled software developer with experience in TypeScript and
-          JavaScript, and expertise in frameworks like React, Node.js, and
-          Three.js. I'm a quick learner and collaborate closely with clients to
-          create efficient, scalable, and user-friendly solutions that solve
-          real-world problems. Let's work together to bring your ideas to life!
-        </motion.p>
+          <img
+            src={image}
+            alt="Matheus Alves"
+            className='w-[350px] rounded-[50%] h-auto object-contain'
+          />
+        </motion.div>
       </motion.div>
 
-      <div>
-        Algo
-      </div>
-    </motion.div>
-      
       <div className='mt-20 flex justify-center flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

@@ -13,6 +13,8 @@ import {
     nodejs,
     mongodb,
     git,
+    google,
+    netlify,
     figma,
     docker,
     meta,
@@ -23,6 +25,12 @@ import {
     jobit,
     tripguide,
     threejs,
+    aracao,
+    starbucksimg,
+    testeNuxt,
+    testeReact,
+    review,
+    tour,
   } from "../assets";
   
   export const navLinks = [
@@ -42,19 +50,19 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Desenvolvedor Web",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Desenvolvedor Front-End",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Desenvolvedor Backend",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Aspirante a Full-Stack",
       icon: creator,
     },
   ];
@@ -197,7 +205,7 @@ import {
   ];
   
   const projects = [
-    {
+    /*{
       name: "Car Rent",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
@@ -259,7 +267,165 @@ import {
       ],
       image: tripguide,
       source_code_link: "https://github.com/",
+    },*/
+    {
+      name: "Teste de estágio (Nuxt.js)",
+      description:
+        "Foi um aplicação Web feita a partir do framwork Nuxt.js, que é feito em cima de Vue.js, para uma vaga que consegui como desenvolvedor estiário na eveclass. Foi passado um roteiro de um jogo de escolhas que deveria ser implementado e enviado para a avaliação",
+      tags: [
+        {
+          name: "Nuxt",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Vue.js",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: testeNuxt,
+      source_code_link: "https://github.com/MatheusAlvesPereiraRosa/Teste-estagio-vue---nuxt",
     },
-  ];
+    {
+      name: "AraCão",
+      description:
+        "Foi um aplicação Web feita com PHP puro (tanto no cliente como no servidor) com conexão com banco de dados MySQL para salvar os diversos dados de cada uma das seções do site. Eu atuei em seu desenvolvimento desde de o design até seu desenvolvimento e deploy. Ele foi idealizado em um projeto de pesquisa e extensão do IFNMG em que participei",
+      tags: [
+        {
+          name: "PHP",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Jquery",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "MySQL",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Bootstrap",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Google Maps API",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Tinymce",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: aracao,
+      source_code_link: "https://github.com/MatheusAlvesPereiraRosa/Teste-estagio-vue---nuxt",
+    },
+    {
+      name: "Tour review",
+      description:
+        "Uma SPA simples que pode servir de componente para um projeto futuro que eu desenvolver. Foi feito utilizando react e estilização padrão de css puro",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tour,
+      source_code_link: "https://tour-feed.netlify.app/",
+    },
+    {
+      name: "Starbucks",
+      description:
+        "É uma landing page que fiz em cima de um tutorial que achei no youtube quando estava estudando. Tem o tema do starbucks e tem um pouco de dinâmica que fiz com javascript puro",
+      tags: [
+        {
+          name: "HTML",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: starbucksimg,
+      source_code_link: "https://landing-page-starbucks.netlify.app/",
+    },
+    {
+      name: "Dev-challenge",
+      description:
+        "Um SPA que fiz recentemente para uma vaga de desenvolvedor front-end júnior para uma startup. O objetivo do desafio que foi proposta era de pegar dados de uma API que era oferecida a escolha do participante e mostrá-los na tela, devendo ainda ter que pesquisar os resultados",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Axios",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "React-router-dom",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: testeReact,
+      source_code_link: "https://front-end-challenge-icount.netlify.app",
+    },
+    {
+      name: "Review",
+      description:
+        "Uma SPA simples que pode servir de componente para um projeto futuro que eu desenvolver. Foi feito utilizando react e estilização padrão de css puro",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: review,
+      source_code_link: "https://front-end-challenge-icount.netlify.app",
+    },
+  ]; 
   
   export { services, technologies, experiences, testimonials, projects };
