@@ -15,8 +15,12 @@ import {
     git,
     google,
     netlify,
-    figma,
-    docker,
+    bootstrap,
+    vue,
+    nuxt,
+    mysql,
+    //figma,
+    //docker,
     meta,
     starbucks,
     tesla,
@@ -85,12 +89,20 @@ import {
       icon: typescript,
     },
     {
-      name: "React JS",
-      icon: reactjs,
+      name: "bootstrap",
+      icon: bootstrap,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Vue",
+      icon: vue,
+    },
+    {
+      name: "Nuxt",
+      icon: nuxt,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
     },
     {
       name: "Tailwind CSS",
@@ -101,8 +113,8 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "MySQL",
+      icon: mysql,
     },
     {
       name: "Three JS",
@@ -111,14 +123,6 @@ import {
     {
       name: "git",
       icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
     },
   ];
   

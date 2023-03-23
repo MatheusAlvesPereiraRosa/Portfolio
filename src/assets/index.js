@@ -22,6 +22,11 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import bootstrap from "./tech/bootstrap.png";
+import mysql from "./tech/mysql.jpg";
+import nuxt from "./tech/nuxt.png";
+import php from "./tech/php.png";
+import vue from "./tech/vue.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -51,6 +56,11 @@ export {
   close,
   google,
   netlify,
+  bootstrap,
+  mysql,
+  nuxt,
+  php,
+  vue,
   css,
   docker,
   figma,
