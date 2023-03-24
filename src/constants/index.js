@@ -325,6 +325,7 @@ import {
       ],
       image: testeNuxt,
       source_code_link: "https://github.com/MatheusAlvesPereiraRosa/Teste-estagio-vue---nuxt",
+      web_link: "https://teste-estagio-nuxt.netlify.app"
     },
     {
       name: "AraCão",
@@ -365,10 +366,10 @@ import {
         },
       ],
       image: aracao,
-      source_code_link: "https://github.com/MatheusAlvesPereiraRosa/Teste-estagio-vue---nuxt",
+      web_link: "http://wisci.com.br/aracao/2/"
     },
     {
-      name: "Tour review",
+      name: "Tour feed",
       description:
         "Uma SPA simples que pode servir de componente para um projeto futuro que eu desenvolver. Foi feito utilizando react e estilização padrão de css puro",
       tags: [
@@ -386,7 +387,8 @@ import {
         },
       ],
       image: tour,
-      source_code_link: "https://tour-feed.netlify.app/",
+      source_code_link: "https://github.com/MatheusAlvesPereiraRosa/Tour-feed",
+      web_link: "https://tour-feed.netlify.app"
     },
     {
       name: "Starbucks",
@@ -407,7 +409,8 @@ import {
         },
       ],
       image: starbucksimg,
-      source_code_link: "https://landing-page-starbucks.netlify.app/",
+      source_code_link: "https://github.com/MatheusAlvesPereiraRosa/Landing-page---starbucks",
+      web_link: "https://landing-page-starbucks.netlify.app/"
     },
     {
       name: "Dev-challenge",
@@ -436,7 +439,8 @@ import {
         },
       ],
       image: testeReact,
-      source_code_link: "https://front-end-challenge-icount.netlify.app",
+      source_code_link: "https://github.com/MatheusAlvesPereiraRosa/front-end-challenge",
+      web_link: "https://front-end-challenge-icount.netlify.app",
     },
     {
       name: "Review",
@@ -457,7 +461,8 @@ import {
         },
       ],
       image: review,
-      source_code_link: "https://front-end-challenge-icount.netlify.app",
+      source_code_link: "https://github.com/MatheusAlvesPereiraRosa/Reviews",
+      web_link: "https://reviews-p.netlify.app/"
     },
   ]; 
   

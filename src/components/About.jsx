@@ -50,10 +50,10 @@ const About = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
           >
-            Sou um desenvolvedor de software esforçado e com experiência em desenvolvimento
-            com javascript (tanto no front como no back) na Web e tenho bastante experiência
-            utilizando framworks como React, Vue, Node.js e recentemente React Native. Gosto
-            de aprender, tenho bastante empenho no meu trabalho e já tenho experiência atuando
+            Sou um desenvolvedor de software, e tenho experiência em desenvolvimento
+            com javascript (tanto no front como no back) utilizando frameworks como React, Vue, Node.js e recentemente React Native
+            (devido ao meu TCC que propôs o desenvolvimento de um APP).
+            Gosto de aprender, tenho bastante empenho no meu trabalho e já tenho experiência atuando
             na área. Vamos trabalhar juntos e trazer as ideias para o mundo real!
           </motion.p>
         </motion.div>
