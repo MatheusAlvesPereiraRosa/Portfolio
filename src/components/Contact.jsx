@@ -9,23 +9,55 @@ import { slideIn } from "../utils/motion"
 
 const Contact = () => {
   const formRef = useRef()
+
   const [form, setForm] = useState({
     name: '',
     email: '',
     message: ''
   })
   const [loading, setLoading] = useState(false)
+  const [errorName, setErrorName] = useState(null)
+  const [errorEmail, setErrorEmail] = useState(null)
+  const [errorMessage, setErrorMessage] = useState(null)
+
+  //Funções
+
+  const validate = () => {
+    let error = false
+
+    setErrorName(null)
+    setErrorEmail(null)
+    setErrorMessage(null)
+
+    if (form.name == "") {
+      setErrorName("Preencha o campo de nome!")
+      error = true
+    }
+
+    if (form.email == "" || form.email.indexOf("@") == -1) {
+      setErrorEmail("Preencha o campo de nome!")
+      error = true
+    }
+
+    if (form.message == "") {
+      setErrorMessage("Preencha o campo de nome!")
+      error = true
+    }
+
+    return !error
+  }
 
   const handleChange = (e) => {
-    const {name, value} = e.target
+    const { name, value } = e.target
 
-    setForm({...form, [name]: value})
+    setForm({ ...form, [name]: value })
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    setLoading(true);
+    if (validate()) {
+      setLoading(true);
 
     emailjs.send("service_59zdq3t", "template_ayxarus", {
       from_name: form.name,
@@ -34,24 +66,25 @@ const Contact = () => {
       to_email: 'matpr.a98@gmail.com',
       message: form.message
     },
-    "zKJnC4F8qvUYrZVml"
+      "zKJnC4F8qvUYrZVml"
     )
-    .then(() => {
-      setLoading(false)
-      alert('Obrigado, eu vou respondê-lo de volta assim que possivel')
+      .then(() => {
+        setLoading(false)
+        alert('Obrigado, eu vou respondê-lo de volta assim que possivel')
 
-      setForm({
-        name: '',
-        email: '',
-        message: '',
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        })
+      }, (error) => {
+        setLoading(false)
+
+        console.log(error)
+
+        alert("Something went wrong")
       })
-    }, (error) => {
-      setLoading(false)
-
-      console.log(error)
-
-      alert("Something went wrong")
-    })
+    }
   }
 
   return (
@@ -80,6 +113,9 @@ const Contact = () => {
               placeholder="Qual seu nome?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
+            {errorName &&
+              <span className='text-red-600 font-medium mt-6'>Digite um nome</span>
+            }
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Seu email</span>
@@ -91,6 +127,9 @@ const Contact = () => {
               placeholder="Qual seu endereço eletrônico?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
+            {errorEmail &&
+              <span className='text-red-600 font-medium my-4'>Digite um email válido</span>
+            }
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Sua mensagem</span>
@@ -102,6 +141,9 @@ const Contact = () => {
               placeholder='O que você quer falar comigo?'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
+            {errorMessage &&
+              <span className='text-red-600 font-medium my-6'>Digite uma mensagem</span>
+            }
           </label>
 
           <button

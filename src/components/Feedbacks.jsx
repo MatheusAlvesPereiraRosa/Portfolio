@@ -17,7 +17,7 @@ const FeedBackCard = ({ index, testimonial, name, designation, company, image })
     <div className="mt-1">
       <p className="text-white tracking-wider text-[18px]">{testimonial}</p>
 
-      <div className="mt-7 flex jusity-between items-center gap-1">
+      <div className="mt-7 flex justify-center items-center gap-1">
         <div className="flex-1 flex flex-col">
           <p>
             <span className="blue-text-gradient">@</span> {name}
@@ -48,7 +48,7 @@ const Feedbacks = () => {
         </motion.div>
       </div>
 
-      <div className={`${styles.paddingX} mt-20 pb-14 flex flex-wrap gap-7`}>
+      <div className={`${styles.paddingX} mt-20 pb-14 flex flex-wrap justify-center gap-7`}>
         {testimonials.map((testimonial, index) => (
           <FeedBackCard
             key={testimonial.name}

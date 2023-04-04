@@ -9,7 +9,7 @@ import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className='xs:w-[250px] w-full mt-6'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -39,7 +39,7 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div className='flex flex-col items-center xl:flex-row md:flex-row'>
+      <motion.div className='flex flex-col items-center xl:flex-row md:flex-row my-6'>
         <motion.div>
           <motion.div variants={textVariant()}>
             <p className={styles.sectionSubText}>Introdução</p>
@@ -60,7 +60,7 @@ const About = () => {
 
         <motion.div
           variants={fadeIn("", "", 0.1, 1)}
-          className='w-[350px] rounded-[50%] h-auto object-contain ml-12 sm:mt-12'
+          className='w-[350px] rounded-[50%] h-auto object-contain sm:ml-12 sm:mt-0 mt-12'
         >
           <img
             src={image}
