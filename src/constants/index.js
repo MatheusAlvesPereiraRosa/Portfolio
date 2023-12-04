@@ -30,6 +30,9 @@ import {
     //carrent,
     //jobit,
     //tripguide,
+    tbot,
+    vueshop,
+    appremake,
     threejs,
     aracao,
     starbucksimg,
@@ -56,7 +59,7 @@ import {
   
   const services = [
     {
-      title: "Desenvolvedor Web",
+      title: "Desenvolvedor Web/Mobile",
       icon: web,
     },
     {
@@ -188,10 +191,10 @@ import {
       iconBg: "#E6DEDD",
       date: "Mar 2022 - Agosto 2022",
       points: [
-        "Atuei no desenvolvimento de componentes dinâmicos novos para o site da empresa, que era focado em vender plataformas (customizáveis) de ensino online para clientes interessados em começar a vender contéudo online de forma personalizada",
-        "No desenvolvimento utilizei conhecimentos de Vue.js, Nuxt.js, javascript e typescript e stylus com preprocessador de CSS para a estilização dos componentes.",
-        "Faziamos versionamento de código no github por meio de pull-requests que eram revisados pelos membros da equipe.",
-        "Para reuniões e escritório virtual utilizavamos o gather e para a comunicação usavamos o slack e para divisão de tarefas utilizamos metodologias agéis como e scrum e kanban por meio do notion.",
+        "Atuei no desenvolvimento de componentes dinâmicos novos para o site da empresa, que era focado em vender plataformas (customizáveis) de ensino online para clientes interessados em começar a vender conteúdo online de forma personalizada.",
+        "No desenvolvimento utilizei conhecimentos de Vue.js, Nuxt.js, javascript e typescript e stylus com pré processador de CSS para a estilização dos componentes.",
+        "Fazíamos o versionamento de código no github por meio de pull-requests que eram revisados pelos membros da equipe.",
+        "Para reuniões e escritório virtual utilizamos o gather e para a comunicação usávamos o slack e para divisão de tarefas utilizamos metodologias ágeis como e scrum e kanban por meio do notion.",
       ],
     },
     {
@@ -201,11 +204,11 @@ import {
       iconBg: "#E6DEDD",
       date: "Abril 2021 - Janeiro 2022",
       points: [
-        "Atuei na criação da plataforma AraCão desde seu planejamento, desing de interface, levantamento de requisitos",
-        "No desenvolvimento utilizei conhecimentos de PHP, Boostrap, Javascript e Jquery para desenvolver a interfaces e as funcionalidades do site.",
-        "Sobre o back-end do site ele foi feito 100% em PHP puro, com conexão com o banco de dados que foi feito em MySQL",
+        "Atuei na criação da plataforma AraCão desde seu planejamento, design de interface, levantamento de requisitos.",
+        "No desenvolvimento utilizei conhecimentos de PHP, Boostrap, Javascript e Jquery para desenvolver as interfaces e as funcionalidades do site.",
+        "Sobre o back-end do site ele foi feito 100% em PHP puro, com conexão com o banco de dados que foi feito em MySQL.",
         "O versionamento do código foi feito no github por meio de pull-requests que eram revisados pelos membros da equipe (outros bolsistas do projeto).",
-        "Fui o principal gerenciador do projeto junto de meu coordenador da área e outros coordenadores do projeto em que o site pretendia colaborar DIGITOOL-Corona",
+        "Fui o principal gerenciador do projeto junto de meu coordenador da área e outros coordenadores do projeto em que o site pretendia colaborar DIGITOOL-Corona.",
       ],
     },
   ];
@@ -259,48 +262,65 @@ import {
       image: carrent,
       source_code_link: "https://github.com/",
     },
+    */
     {
-      name: "Job IT",
+      name: "Tbot-challenge",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Um teste de um processo seletivo para uma Vaga Fullstack, o objetivo era copiar/espelhar a interface do telegram, assim como suas funcionalidades de receber conversas em tempo real, enviar mensagens, recuperar histórico de conversas, login e sign up e por fim, seleção de conversas",
       tags: [
         {
-          name: "react",
+          name: "Vue.js",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Javascript",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "TailwindCSS",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Vuex",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Websocket",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Express",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Telegraf/TelegramAPI",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Axios",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "JWT",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "MongoDB",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Webhook",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Ngrok",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: tbot,
+      source_code_link: "https://github.com/MatheusAlvesPereiraRosa/tbot-challenger-front",
+      source_code_link2: "https://github.com/MatheusAlvesPereiraRosa/tbot-challenger-back",
     },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },*/
     {
       name: "Teste de estágio (Nuxt.js)",
       description:
@@ -311,7 +331,7 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "Css",
+          name: "CSS",
           color: "green-text-gradient",
         },
         {
@@ -326,6 +346,58 @@ import {
       image: testeNuxt,
       source_code_link: "https://github.com/MatheusAlvesPereiraRosa/Teste-estagio-vue---nuxt",
       web_link: "https://teste-estagio-nuxt.netlify.app"
+    },
+    {
+      name: "Game Center",
+      description:
+        "Um teste que de um processo seletivo para desenvolvedor Front-End, o objetivo era realizar a requisição para a API oferecida no desafio e retornar os dados na tela com filtro de pesquisa por nome e categoria, além de tratamento de erros vindos da requisição",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Typescript",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Motion",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: appremake,
+      source_code_link: "https://github.com/MatheusAlvesPereiraRosa/app-masters-remake",
+      web_link: "https://game-center-remake.netlify.app/"
+    },
+    {
+      name: "Vue Shop",
+      description:
+        "Nesse teste, a escolha sobre o que fazê-lo e como era livre, então decidi fazer uma loja virtual (baseado em outra aplicação que a empresa já tinha feito), englobando aspectos comuns como: filtros de pesquisa, carrinho virtual e cálculo de preço final. Escolhi fazer isso por ser algo que mostra domínio sobre a tecnologia e gerenciamento de estados",
+      tags: [
+        {
+          name: "Vue.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "TailwindCSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Vuex",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: vueshop,
+      source_code_link: "https://github.com/MatheusAlvesPereiraRosa/STS-vue-challenge",
+      web_link: "https://vue3-eshop.netlify.app/"
     },
     {
       name: "AraCão",
@@ -369,28 +441,6 @@ import {
       web_link: "http://wisci.com.br/aracao/2/"
     },
     {
-      name: "Tour feed",
-      description:
-        "Uma SPA simples que pode servir de componente para um projeto futuro que eu desenvolver. Foi feito utilizando react e estilização padrão de css puro",
-      tags: [
-        {
-          name: "React",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "CSS",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Javascript",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tour,
-      source_code_link: "https://github.com/MatheusAlvesPereiraRosa/Tour-feed",
-      web_link: "https://tour-feed.netlify.app"
-    },
-    {
       name: "Starbucks",
       description:
         "É uma landing page que fiz em cima de um tutorial que achei no youtube quando estava estudando. Tem o tema do starbucks e tem um pouco de dinâmica que fiz com javascript puro",
@@ -412,58 +462,7 @@ import {
       source_code_link: "https://github.com/MatheusAlvesPereiraRosa/Landing-page---starbucks",
       web_link: "https://landing-page-starbucks.netlify.app/"
     },
-    {
-      name: "Dev-challenge",
-      description:
-        "Um SPA que fiz recentemente para uma vaga de desenvolvedor front-end júnior para uma startup. O objetivo do desafio que foi proposta era de pegar dados de uma API que era oferecida a escolha do participante e mostrá-los na tela, devendo ainda ter que pesquisar os resultados",
-      tags: [
-        {
-          name: "React",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "CSS",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Javascript",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Axios",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "React-router-dom",
-          color: "blue-text-gradient",
-        },
-      ],
-      image: testeReact,
-      source_code_link: "https://github.com/MatheusAlvesPereiraRosa/front-end-challenge",
-      web_link: "https://front-end-challenge-icount.netlify.app",
-    },
-    {
-      name: "Review",
-      description:
-        "Uma SPA simples que pode servir de componente para um projeto futuro que eu desenvolver. Foi feito utilizando react e estilização padrão de css puro",
-      tags: [
-        {
-          name: "React",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "CSS",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Javascript",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: review,
-      source_code_link: "https://github.com/MatheusAlvesPereiraRosa/Reviews",
-      web_link: "https://reviews-p.netlify.app/"
-    },
+
   ]; 
   
   export { services, technologies, experiences, testimonials, projects };

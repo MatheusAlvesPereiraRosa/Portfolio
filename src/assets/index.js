@@ -38,6 +38,9 @@ import ifnmg from "./company/ifnmg.svg"
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import tbot from "./tbot.png";
+import vueshop from "./vueshop.png";
+import appremake from "./app-remake.png";
 import aracao from "./Aracao.png";
 import starbucksimg from './Starbucks.png';
 import testeNuxt from './Teste-nuxt.png';
@@ -85,6 +88,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  tbot,
+  vueshop,
+  appremake,
   aracao,
   starbucksimg,
   testeNuxt,
