@@ -28,13 +28,11 @@ import nuxt from "./tech/nuxt.png";
 import php from "./tech/php.png";
 import vue from "./tech/vue.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import kinterativa from "./company/kinterativa.svg";
 import eveclass from "./company/eveclass.png";
 import ifnmg from "./company/ifnmg.svg"
+import intentus from "./company/intentus.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -80,14 +78,11 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   kinterativa,
   eveclass,
   ifnmg,
   carrent,
+  intentus,
   jobit,
   tripguide,
   tbot,

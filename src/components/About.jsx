@@ -51,7 +51,7 @@ const About = () => {
             className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
           >
             Sou Desenvolvedor de Software Web, e tenho experiência em desenvolvimento Front-End, Back-End, Mobile e Banco de Dados.
-            Tenho amplo conhecimento com javascript (Front e Back) utilizando frameworks como React, Next, React-Native, Vue, Nuxt, Node.js e Express.
+            Tenho amplo conhecimento com javascript (Front e Back) utilizando frameworks como React, Next, React-Native, Vue, Nuxt, Node.js, Express e Nest.
             Gosto de aprender, tenho bastante empenho e gosto no meu trabalho, e já tenho experiência atuando
             na área. Vamos trabalhar juntos e trazer as ideias para o mundo real!
           </motion.p>

@@ -28,6 +28,7 @@ import {
     eveclass,
     ifnmg,
     kinterativa,
+    intentus,
     //carrent,
     //jobit,
     //tripguide,
@@ -145,57 +146,30 @@ const experiences = [
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
     },*/
     {
-        title: "Desenvolvedor Front-End Júnior",
+        title: "Desenvolvedor Fullstack",
+        company_name: "Intentus Digital",
+        icon: intentus,
+        iconBg: "#E6DEDD",
+        date: "Junho de 2024 - Julho de 2024",
+        points: [
+            "Atuei no planejamento e desenvolvimento de novos sistemas de clientes que a empresa oferece serviços de software. Utilizei conhecimentos de Front-end , Back-end e Banco de dados para realizar minhas tarefas.",
+            "No que diz respeito a programação, utilizei linguagens/frameworks como Next, React, Javascript, Typescript, Nest, Strapi (scrapped), Directus (scrapped), TailwindCSS, Prisma, Postgres e SCSS para desenvolver as aplicações que estavam sendo produzidas comigo.",
+            "Utilizávamos o Slack (como ferramenta de comunicação para reuniões breves, conversas, informações), Asana (para documentos e definição de tarefas) e Miro (para criação de diagramas e descrições mais visuais).",
+        ],
+    },
+    {
+        title: "Desenvolvedor Front-End",
         company_name: "K Interativa",
         icon: kinterativa,
         iconBg: "#E6DEDD",
-        date: "Jan 2024 - Até o momento",
+        date: "Jan 2024 - Maio de 2024",
         points: [
-            "Atuo no desenvolvimento e manutenção de sistemas de clientes que a empresa oferece serviços de software. Utilizo conhecimentos de Front-end e Back-end para realizar minhas tarefas.",
-            "Atualmente, estou utilizando bastante Next, React, Angular, Bootstrap e SCSS para realizar modificações e atualizações em uma plataforma que utiliza conceitos de streaming, jogos de apostas e/ou jogos beneficentes sociais.",
-            "Fazemos o versionamento de código no github por meio de pull-requests que são revisados pelos membros da equipe.",
-            "Para reuniões e comunicação, utilizamos o discord como ferramenta.",
+            "Atuei no desenvolvimento e manutenção de sistemas de clientes que a empresa oferece serviços de software. Utilizo conhecimentos de Front-end e Back-end para realizar minhas tarefas.",
+            "Fiz uso de Next, React, Angular, Bootstrap e SCSS para realizar modificações e atualizações em uma plataforma que utiliza conceitos de streaming, jogos de apostas e/ou jogos beneficentes sociais.",
+            "Fazíamos o versionamento de código no github por meio de pull-requests que são revisados pelos membros da equipe.",
+            "Para reuniões e comunicação, utilizávamos o discord como ferramenta de comunicação.",
         ],
     },
     {
@@ -336,12 +310,28 @@ const projects = [
         source_code_link2: "https://github.com/MatheusAlvesPereiraRosa/tbot-challenger-back",
     },
     {
-        name: "Teste de estágio (Nuxt.js)",
+        name: "AraCão",
         description:
-            "Foi um aplicação Web feita a partir do framwork Nuxt.js, que é feito em cima de Vue.js, para uma vaga que consegui como desenvolvedor estiário na eveclass. Foi passado um roteiro de um jogo de escolhas que deveria ser implementado e enviado para a avaliação",
+            "Foi um aplicação Web feita com PHP puro (tanto no cliente como no servidor) com conexão com banco de dados MySQL para salvar os diversos dados de cada uma das seções do site. Eu atuei em seu desenvolvimento desde de o design até seu desenvolvimento e deploy. Ele foi idealizado em um projeto de pesquisa e extensão do IFNMG em que participei",
         tags: [
             {
-                name: "Nuxt",
+                name: "PHP",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Javascript",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Jquery",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "MySQL",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "Bootstrap",
                 color: "blue-text-gradient",
             },
             {
@@ -349,17 +339,16 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "Vue.js",
+                name: "Google Maps API",
                 color: "pink-text-gradient",
             },
             {
-                name: "Javascript",
+                name: "Tinymce",
                 color: "orange-text-gradient",
             },
         ],
-        image: testeNuxt,
-        source_code_link: "https://github.com/MatheusAlvesPereiraRosa/Teste-estagio-vue---nuxt",
-        web_link: "https://teste-estagio-nuxt.netlify.app"
+        image: aracao,
+        web_link: "http://wisci.com.br/aracao/2/"
     },
     {
         name: "Game Center",
@@ -414,28 +403,12 @@ const projects = [
         web_link: "https://vue3-eshop.netlify.app/"
     },
     {
-        name: "AraCão",
+        name: "Teste de estágio (Nuxt.js)",
         description:
-            "Foi um aplicação Web feita com PHP puro (tanto no cliente como no servidor) com conexão com banco de dados MySQL para salvar os diversos dados de cada uma das seções do site. Eu atuei em seu desenvolvimento desde de o design até seu desenvolvimento e deploy. Ele foi idealizado em um projeto de pesquisa e extensão do IFNMG em que participei",
+            "Foi um aplicação Web feita a partir do framwork Nuxt.js, que é feito em cima de Vue.js, para uma vaga que consegui como desenvolvedor estiário na eveclass. Foi passado um roteiro de um jogo de escolhas que deveria ser implementado e enviado para a avaliação",
         tags: [
             {
-                name: "PHP",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Javascript",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Jquery",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "MySQL",
-                color: "orange-text-gradient",
-            },
-            {
-                name: "Bootstrap",
+                name: "Nuxt",
                 color: "blue-text-gradient",
             },
             {
@@ -443,16 +416,17 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "Google Maps API",
+                name: "Vue.js",
                 color: "pink-text-gradient",
             },
             {
-                name: "Tinymce",
+                name: "Javascript",
                 color: "orange-text-gradient",
             },
         ],
-        image: aracao,
-        web_link: "http://wisci.com.br/aracao/2/"
+        image: testeNuxt,
+        source_code_link: "https://github.com/MatheusAlvesPereiraRosa/Teste-estagio-vue---nuxt",
+        web_link: "https://teste-estagio-nuxt.netlify.app"
     },
     {
         name: "Starbucks",
