@@ -33,6 +33,7 @@ import kinterativa from "./company/kinterativa.svg";
 import eveclass from "./company/eveclass.png";
 import ifnmg from "./company/ifnmg.svg"
 import intentus from "./company/intentus.png"
+import compre_sua_peca from "./company/csp-logo.jpg"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -83,6 +84,7 @@ export {
   ifnmg,
   carrent,
   intentus,
+  compre_sua_peca,
   jobit,
   tripguide,
   tbot,

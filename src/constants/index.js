@@ -29,6 +29,7 @@ import {
     ifnmg,
     kinterativa,
     intentus,
+    compre_sua_peca,
     //carrent,
     //jobit,
     //tripguide,
@@ -53,10 +54,10 @@ export const navLinks = [
         id: "work",
         title: "Work",
     },
-    {
+    /*{
         id: "contact",
         title: "Contact",
-    },
+    },*/
 ];
 
 const services = [
@@ -147,6 +148,18 @@ const experiences = [
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },*/
+    {
+        title: "Desenvolvedor Fullstack",
+        company_name: "Compre Sua Peça",
+        icon: compre_sua_peca,
+        iconBg: "#E6DEDD",
+        date: "Agosto de 2024 - Atualmente",
+        points: [
+            "Atuo como desenvolvedor full stack em projetos internos/inovação, desde seu planejamento e concepção, até seu deploy e correções, e como desenvolvedor front-end em projetos contratados por terceiros segundo contratos planejados.",
+            "No que diz respeito a programação, utilizei linguagens/frameworks como React, Javascript, Typescript, Nest, Python, AWS, TailwindCSS, Prisma, MySQL para desenvolver as aplicações quep articipei da produção.",
+            "Temos a prática de fazer dailys com todos os times todas as manhãs no início do dia para expor as tarefas e avanços, e sou o responsável por gerenciar algumas tarefas de estagiários e de juniores que necessitam de aconselhamento ou revisões.",
+        ],
+    },
     {
         title: "Desenvolvedor Fullstack",
         company_name: "Intentus Digital",
